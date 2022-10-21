@@ -604,7 +604,7 @@ This account requires permissions to access the specified shared folder. It must
 > Create one domain user account with minimal permissions to access the required network resources, and use it for all task sequences.
 
 > [!IMPORTANT]
-> Don't assign interactive sign-in permissions to this account.
+> Assigning interactive sign-in permissions to this account is not recommended nor required.
 >
 > Don't use the network access account for this account.
 
@@ -617,9 +617,9 @@ Set up the account to have the minimum permissions required to run the command l
 > [!IMPORTANT]
 > Don't use the network access account for this account.
 >
-> Never make the account a domain admin.
+> We recommend that you do NOT make the account a domain admin, nor is this required in any way.
 >
-> Never set up roaming profiles for this account. When the task sequence runs, it downloads the roaming profile for the account. This leaves the profile vulnerable to access on the local computer.
+> Setting up roaming profiles for this account is not recommended. When the task sequence runs, it downloads the roaming profile for the account. This leaves the profile vulnerable to access on the local computer.
 >
 > Limit the scope of the account. For example, create different task sequence run as accounts for each task sequence. Then if one account is compromised, only the client computers to which that account has access are compromised.
 >
